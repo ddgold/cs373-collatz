@@ -42,8 +42,8 @@ Collatz.zip: makefile \
 		   	 SphereCollatz.py \
 		   	 TestCollatz.py TestCollatz.out
 
-RunCollatz.out: RunCollatz.in RunCollatz.py
+RunCollatz.out: RunCollatz.in RunCollatz.py Collatz.py
 		python RunCollatz.py < RunCollatz.in > RunCollatz.out
 
-TestCollatz.out: TestCollatz.py
+TestCollatz.out: TestCollatz.py Collatz.py
 		python TestCollatz.py > TestCollatz.out
