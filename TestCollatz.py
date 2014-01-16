@@ -73,6 +73,10 @@ class TestCollatz (unittest.TestCase) :
         v = collatz_eval(900, 1000)
         self.assert_(v == 174)
 
+    def test_eval_5 (self) :
+        v = collatz_eval(200, 100)
+        self.assert_(v == 125)
+
     # -----
     # cycle
     # -----
@@ -130,6 +134,13 @@ class TestCollatz (unittest.TestCase) :
         w = StringIO.StringIO()
         collatz_solve(r, w)
         self.assert_(w.getvalue() == "100 200 125\n900 1000 174\n1 10 20\n")
+
+    def test_solve_4 (self) :
+        r = StringIO.StringIO("10 1\n200 100\n210 201\n1000 900\n")
+        w = StringIO.StringIO()
+        collatz_solve(r, w)
+        self.assert_(w.getvalue() == "10 1 20\n200 100 125\n210 201 89\n1000 900 174\n")
+
 # ----
 # main
 # ----
