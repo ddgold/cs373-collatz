@@ -47,6 +47,10 @@ return the max cycle length in the range [i, j]
         i = j
         j = temp
     assert i <= j
+
+    if i < j / 2 :
+        i = j / 2
+
     v = 0
     for n in range(i, j + 1) :
         l = collatz_cycle(n)
@@ -72,7 +76,7 @@ return the cycle length for n
         if n % 2 == 0 : #Even
             l = 1 + collatz_cycle (n / 2)
         else :          #Odd
-            l = 1 + collatz_cycle (n * 3 + 1)
+            l = 2 + collatz_cycle ((n * 3 + 1) / 2)
         cash[n] = l
         return l
 
