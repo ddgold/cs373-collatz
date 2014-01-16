@@ -11,7 +11,7 @@ clean:
 		rm -f *.pyc
 
 diff: RunCollatz.in RunCollatz.out RunCollatz.py
-		RunCollatz.py < RunCollatz.in > RunCollatz.tmp
+		python RunCollatz.py < RunCollatz.in > RunCollatz.tmp
 		diff RunCollatz.out RunCollatz.tmp
 		rm RunCollatz.tmp
 
