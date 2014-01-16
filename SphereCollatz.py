@@ -6,12 +6,6 @@
 
 import sys
 
-# ----
-# main
-# ----
-
-collatz_solve(sys.stdin, sys.stdout)
-
 # ------------
 # collatz_read
 # ------------
@@ -45,6 +39,10 @@ return the max cycle length in the range [i, j]
 """
     assert i > 0
     assert j > 0
+    if i > j :
+        temp = i
+        i = j
+        j = temp
     v = 0
     for n in range(i, j + 1) :
         l = collatz_cycle(n)
@@ -98,3 +96,9 @@ w is a writer
     while collatz_read(r, a) :
         v = collatz_eval(a[0], a[1])
         collatz_print(w, a[0], a[1], v)
+
+# ----
+# main
+# ----
+
+collatz_solve(sys.stdin, sys.stdout)
