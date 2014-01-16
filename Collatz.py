@@ -57,9 +57,11 @@ n is the number for which cycle length is calculated
 return the cycle length for n
 """
     assert n > 0
-    if n % 2 == 0 :  #Even
+    if n == 1 :        #Base Case
+        return 1
+    elif n % 2 == 0 :  #Even
         return 1 + collatz_cycle (n / 2)
-    else :           #Odd
+    else :             #Odd
         return 1 + collatz_cycle (n * 3 + 1)
 
 # -------------
