@@ -1,10 +1,13 @@
-#!/usr/bin/env python
-
 # -------
 # imports
 # -------
 
 import sys
+
+# ----
+# cash
+# ----
+cash = {1: 1}
 
 # ------------
 # collatz_read
@@ -43,6 +46,7 @@ return the max cycle length in the range [i, j]
         temp = i
         i = j
         j = temp
+    assert i <= j
     v = 0
     for n in range(i, j + 1) :
         l = collatz_cycle(n)
@@ -51,22 +55,26 @@ return the max cycle length in the range [i, j]
     assert v > 0
     return v
 
-# ------------
-# collatz_eval
-# ------------
+# -------------
+# collatz_cycle
+# -------------
 
 def collatz_cycle (n) :
     """
 n is the number for which cycle length is calculated
 return the cycle length for n
 """
+    global cash
     assert n > 0
-    if n == 1 :        #Base Case
-        return 1
-    elif n % 2 == 0 :  #Even
-        return 1 + collatz_cycle (n / 2)
-    else :             #Odd
-        return 1 + collatz_cycle (n * 3 + 1)
+    if cash.get(n, 0) != 0:
+        return cash[n]
+    else:
+        if n % 2 == 0 : #Even
+            l = 1 + collatz_cycle (n / 2)
+        else :          #Odd
+            l = 1 + collatz_cycle (n * 3 + 1)
+        cash[n] = l
+        return l
 
 # -------------
 # collatz_print
