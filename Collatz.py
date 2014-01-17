@@ -78,7 +78,7 @@ return the cycle length for n
         if n == 1 :         #Base Case
             return 1
         elif n % 2 == 0 :   #Even
-            l = 1 + collatz_cycle (n / 2)
+            l = 1 + collatz_cycle (n >> 1)
         else :              #Odd
             l = 2 + collatz_cycle (n + (n >> 1) + 1)
         if n < 100000 :
