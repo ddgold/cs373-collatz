@@ -78,7 +78,7 @@ return the cycle length for n
         if n % 2 == 0 : #Even
             l = 1 + collatz_cycle (n / 2)
         else :          #Odd
-            l = 2 + collatz_cycle ((n * 3 + 1) / 2)
+            l = 2 + collatz_cycle (n + (n >> 1) + 1)
         cash[n] = l
         return l
 
