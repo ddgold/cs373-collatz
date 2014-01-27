@@ -1,0 +1,125 @@
+commit 31676584228774704cea018fa339701b919fe149
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Mon Jan 20 13:53:34 2014 -0600
+
+    Restored code to previous state
+
+commit 7ab8a8ae9f8a6e8b037acf89485d3ae575f89fdc
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Mon Jan 20 13:28:12 2014 -0600
+
+    Having issue with Collatz2 code, reverting to before
+
+commit 79eaf905522c9d16ab5eeef7f89b0f9769c572b5
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Mon Jan 20 13:13:40 2014 -0600
+
+    Undated ShereCollatz.py
+
+commit 08c997a6e6bda45cf313da0e6b6998965d294cb8
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Mon Jan 20 13:09:29 2014 -0600
+
+    Updated Collatz.py to uses python generator
+
+commit 9390668e357a8226c8c5acdbb835777b2be4c32e
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Fri Jan 17 16:42:38 2014 -0600
+
+    added bit shift to even resurtion
+
+commit ed8a3ba8755c7d58e3f91f4e65d9a3bf75239b65
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Fri Jan 17 16:33:13 2014 -0600
+
+    Changed to a list cash, reduced time to 0.84, still not passing V2
+
+commit 78df1eb0d9873684a428679d6f09457022de105d
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Fri Jan 17 15:59:19 2014 -0600
+
+    Generated documentation
+
+commit 423b83b6d5bc6069cd847e17cc3ab730a2384792
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Fri Jan 17 15:32:41 2014 -0600
+
+    Made program to generate acceptance tests and created 1000 test
+
+commit f3a863d1dc67a0a82e4d1e247c30d7485f7340b5
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Fri Jan 17 15:09:09 2014 -0600
+
+    Updated odd number shortcut to utilize bit shift
+
+commit 0eafaa42acaa1f219b4fcaafda40be2c9398debf
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 11:52:55 2014 -0600
+
+    Added unit test for revered input
+
+commit 8392a5e8721ca6929c2bdae11b1787d4bf43c2cb
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 11:50:40 2014 -0600
+
+    Added shortcuts to reduce time
+
+commit 454eede3189c32e86d1ea4ebbd38b19e5f907b75
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 11:41:35 2014 -0600
+
+    Implemented simple cash using dictionary.  Passed sphere, 1.84sec 4.0M
+
+commit 670483d2ea95047d2ec48fa44fa857151665f99b
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 11:11:57 2014 -0600
+
+    Fixed compile error, now wrong answer on sphere
+
+commit 4aa6b50276ccc3691de460af8e756dffad04bc74
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 10:59:15 2014 -0600
+
+    Made SphereCollatz.py, runtime error
+
+commit 1a826a11a110c97d15ebb73c874fa0721c52c923
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 10:55:19 2014 -0600
+
+    Added unit tests for collatz_cycle, passed
+
+commit e203e81d7da978e3b1a94f24452202aeb789213a
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 10:52:30 2014 -0600
+
+    fixed max depth test, passed all unit tests
+
+commit 008d4b8738c5a776ca88549d9aa1cf08d6cb5ed4
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 10:49:53 2014 -0600
+
+    implemented easies solution
+
+commit f24c37831d7b2232681ee62ca054d849245e0645
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 10:42:52 2014 -0600
+
+    Added more unit tests
+
+commit 320fa7e3acf18010b644a70de54dd07069a66b21
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 10:25:20 2014 -0600
+
+    Updated read
+
+commit b4df727af08e3b475b315371b34a8a97f736b18d
+Author: Doug <ddg625@cs.utexas.edu>
+Date:   Thu Jan 16 10:16:07 2014 -0600
+
+    Created repo and added provided code
+
+commit b739bed0b4b8d65139c53fbda06ac47bbda93325
+Author: ddgold <ddgold@me.com>
+Date:   Thu Jan 16 08:00:08 2014 -0800
+
+    Initial commit
